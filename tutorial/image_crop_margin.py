@@ -29,24 +29,27 @@ def cropAllFilesInDirectory(input_dir, naming_func, output_dir = None):
                 file_path = os.path.join(root, file)
                 im = Image.open(file_path)
                 cropped = cropImageWhite(im)
-                new_file_name =  naming_func(file_path)#'crp_' +str(dir_index) + str(file_index) + '_' + file
+                new_file_name =  naming_func(file_path) #'crp_' +str(dir_index) + str(file_index) + '_' + file
                 if output_dir == None:
                     cropped.save(os.path.join(root, new_file_name))
                 else:
+                    if( not os.path.exists(output_dir) ):
+                        os.makedirs(output_dir)
                     cropped.save(os.path.join(output_dir, new_file_name))
 
 class FunctionFileNaming:
     files_class = None
 
-    def FunctionFileNaming(self, files_class):
+    def __init__(self, files_class):
         self.files_class = files_class
 
     def __call__(self, file_path):
         dir_path, file = os.path.split(file_path)
-        dir_arr = dir_path.split('//')
+        dir_arr = dir_path.split(r'/')
+        file_name, file_ext = os.path.splitext(file)
         if(dir_arr[-1] == ''):
             dir_arr.pop(len(dir_arr)-1)
-        return file_path + '_' + dir_arr[-1] + '_' + file
+        return self.files_class + '_' + dir_arr[-1] + file_ext
 
 
 def extractPatchesOutOfImage(image):
@@ -55,18 +58,20 @@ def extractPatchesOutOfImage(image):
     
 
 if __name__ == "__main__":
-    root_path = r'/home/itamarg/Pictures/CCD'
-    output_dir = r'/home/itamarg/Pictures/'
+    root_path = r'/home/itamarg/Downloads/CCD'
+    output_dir = r'/home/itamarg/Pictures/PDL1_Cropped'
 
+    root_path_pos = os.path.join(root_path, r'PDL1 Positive')
     positive = 'POS'
-    pos_dir = output_dir + positive + '_PDL1'
-    positiveNaming = FunctionFileNaming(positive)
-    cropAllFilesInDirectory(root_path, positiveNaming, output_dir=pos_dir)
+    pos_dir = os.path.join(output_dir,positive + '_PDL1')
+    positive_naming = FunctionFileNaming(positive)
+    cropAllFilesInDirectory(root_path_pos, positive_naming, output_dir=pos_dir)
 
+    root_path_neg = os.path.join(root_path, r'PDL1 Negative')
     negative = 'NEG'
-    neg_dir = output_dir + negative + '_PDL1'
-    negativeNaming = FunctionFileNaming(negative)
-    cropAllFilesInDirectory(root_path, negativeNaming, output_dir=neg_dir)
+    neg_dir = os.path.join(output_dir, negative + '_PDL1')
+    negativ_naming = FunctionFileNaming(negative)
+    cropAllFilesInDirectory(root_path_neg, negativ_naming, output_dir=neg_dir)
 
 
 
