@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f3df83-5d24-4731-9854-bba2cb600a67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorial/image_augmantation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/image_augmantation.py" afterDir="false" />
     </list>
@@ -107,63 +104,72 @@
       <option name="presentableId" value="Default" />
       <updated>1573661233712</updated>
     </task>
+    <task id="LOCAL-00001" summary="added function to crop the image from a white background">
+      <created>1576063101269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576063101269</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added function to crop the image from a white background" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to crop the image from a white background" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576056382700">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="437" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576056382700" />
-    <state width="1377" height="269" key="GridCell.Tab.0.bottom" timestamp="1576059226097">
+    <state x="604" y="135" key="CommitChangelistDialog2" timestamp="1576063101179">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="269" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1576059226097" />
-    <state width="1377" height="269" key="GridCell.Tab.0.center" timestamp="1576059226096">
+    <state x="604" y="135" key="CommitChangelistDialog2/65.24.1855.1056@65.24.1855.1056" timestamp="1576063101179" />
+    <state width="1832" height="269" key="GridCell.Tab.0.bottom" timestamp="1576065393562">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="269" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1576059226096" />
-    <state width="1377" height="269" key="GridCell.Tab.0.left" timestamp="1576059226096">
+    <state width="1832" height="269" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1576065393562" />
+    <state width="1832" height="269" key="GridCell.Tab.0.center" timestamp="1576065393561">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="269" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1576059226096" />
-    <state width="1377" height="269" key="GridCell.Tab.0.right" timestamp="1576059226096">
+    <state width="1832" height="269" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1576065393561" />
+    <state width="1832" height="269" key="GridCell.Tab.0.left" timestamp="1576065393561">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="269" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1576059226096" />
-    <state width="1377" height="332" key="GridCell.Tab.1.bottom" timestamp="1576059052185">
+    <state width="1832" height="269" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1576065393561" />
+    <state width="1832" height="269" key="GridCell.Tab.0.right" timestamp="1576065393561">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="332" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1576059052185" />
-    <state width="1377" height="332" key="GridCell.Tab.1.center" timestamp="1576059052184">
+    <state width="1832" height="269" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1576065393561" />
+    <state width="1377" height="332" key="GridCell.Tab.1.bottom" timestamp="1576063127088">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="332" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1576059052184" />
-    <state width="1377" height="332" key="GridCell.Tab.1.left" timestamp="1576059052184">
+    <state width="1377" height="332" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1576063127088" />
+    <state width="1377" height="332" key="GridCell.Tab.1.center" timestamp="1576063127087">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="332" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1576059052184" />
-    <state width="1377" height="332" key="GridCell.Tab.1.right" timestamp="1576059052184">
+    <state width="1377" height="332" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1576063127087" />
+    <state width="1377" height="332" key="GridCell.Tab.1.left" timestamp="1576063127087">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1377" height="332" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1576059052184" />
+    <state width="1377" height="332" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1576063127087" />
+    <state width="1377" height="332" key="GridCell.Tab.1.right" timestamp="1576063127088">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1377" height="332" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1576063127088" />
     <state x="486" y="188" key="SettingsEditor" timestamp="1576056329837">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="486" y="188" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1576056329837" />
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1576055822355">
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2" timestamp="1576063102921">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576055822355" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tutorial/image_augmantation.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1576063102921" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1576340763978">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576340763978" />
   </component>
 </project>

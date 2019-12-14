@@ -1,5 +1,6 @@
 from PIL import Image, ImageFilter, ImageChops
 import os
+import cv2
 
 
 def hpfOnCellImage():
@@ -20,18 +21,34 @@ def cropImageWhite(im):
     if bbox:
         return im.crop(bbox)
 
-def cropAllFilesInDirectory(root, files):
-    for file in files:
-        extension = os.path.splitext(file)
-        if extension[1] == '.tif':
-            file_path = os.path.join(root, file)
-            im = Image.open(file_path)
-            cropped = cropImageWhite(im)
-            new_file_name = 'crp_' + file
-            cropped.save(os.path.join(root, new_file_name))
+def cropAllFilesInDirectory(input_dir, output_dir = None):
+    dir_index = 0
+    for root, dirs, files in os.walk(input_dir):
+        dir_index += 1
+        for file_index, file in enumerate(files):
+            extension = os.path.splitext(file)
+            if extension[1] == '.tif':
+                file_path = os.path.join(root, file)
+                im = Image.open(file_path)
+                cropped = cropImageWhite(im)
+                new_file_name = 'crp_' +str(dir_index) + str(file_index) + '_' + file
+                if output_dir == None:
+                    cropped.save(os.path.join(root, new_file_name))
+                else:
+                    cropped.save(os.path.join(output_dir, new_file_name))
 
 
-if __name__ == "__main__":
+
+def extractPatchesOutOfImage(image):
+    im = cv2.imread()
+    thresh = cv2.threshold(im,0,255,cv2.THRESH_BINARY)
+    
+
+if __name__ == "__main__" :
     root_path = r'/home/itamarg/Pictures/CCD'
-    for root, dirs, files in os.walk(root_path):
-        cropAllFilesInDirectory(root, files)
+    output_dir = r'/home/itamarg/Pictures/Positive_PDL1'
+
+    cropAllFilesInDirectory(root_path, output_dir=output_dir)
+    extractPatchesOutOfImage(output_dir)
+
+
