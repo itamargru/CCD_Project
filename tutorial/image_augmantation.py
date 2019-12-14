@@ -21,7 +21,7 @@ def cropImageWhite(im):
     if bbox:
         return im.crop(bbox)
 
-def cropAllFilesInDirectory(input_dir, output_dir = None):
+def cropAllFilesInDirectory(input_dir, output_dir = None, naming_func=None):
     dir_index = 0
     for root, dirs, files in os.walk(input_dir):
         dir_index += 1
@@ -37,7 +37,8 @@ def cropAllFilesInDirectory(input_dir, output_dir = None):
                 else:
                     cropped.save(os.path.join(output_dir, new_file_name))
 
-
+def getImageName(file_path):
+    pass
 
 def extractPatchesOutOfImage(image):
     im = cv2.imread()
