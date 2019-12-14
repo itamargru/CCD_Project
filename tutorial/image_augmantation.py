@@ -21,35 +21,53 @@ def cropImageWhite(im):
     if bbox:
         return im.crop(bbox)
 
-def cropAllFilesInDirectory(input_dir, output_dir = None, naming_func=None):
-    dir_index = 0
+def cropAllFilesInDirectory(input_dir, naming_func, output_dir = None):
     for root, dirs, files in os.walk(input_dir):
-        dir_index += 1
         for file_index, file in enumerate(files):
             extension = os.path.splitext(file)
             if extension[1] == '.tif':
                 file_path = os.path.join(root, file)
                 im = Image.open(file_path)
                 cropped = cropImageWhite(im)
-                new_file_name = 'crp_' +str(dir_index) + str(file_index) + '_' + file
+                new_file_name =  naming_func(file_path)#'crp_' +str(dir_index) + str(file_index) + '_' + file
                 if output_dir == None:
                     cropped.save(os.path.join(root, new_file_name))
                 else:
                     cropped.save(os.path.join(output_dir, new_file_name))
 
-def getImageName(file_path):
-    pass
+class FunctionFileNaming:
+    files_class = None
+
+    def FunctionFileNaming(self, files_class):
+        self.files_class = files_class
+
+    def __call__(self, file_path):
+        dir_path, file = os.path.split(file_path)
+        dir_arr = dir_path.split('//')
+        if(dir_arr[-1] == ''):
+            dir_arr.pop(len(dir_arr)-1)
+        return file_path + '_' + dir_arr[-1] + '_' + file
+
 
 def extractPatchesOutOfImage(image):
     im = cv2.imread()
     thresh = cv2.threshold(im,0,255,cv2.THRESH_BINARY)
     
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
     root_path = r'/home/itamarg/Pictures/CCD'
-    output_dir = r'/home/itamarg/Pictures/Positive_PDL1'
+    output_dir = r'/home/itamarg/Pictures/'
 
-    cropAllFilesInDirectory(root_path, output_dir=output_dir)
-    extractPatchesOutOfImage(output_dir)
+    positive = 'POS'
+    pos_dir = output_dir + positive + '_PDL1'
+    positiveNaming = FunctionFileNaming(positive)
+    cropAllFilesInDirectory(root_path, positiveNaming, output_dir=pos_dir)
+
+    negative = 'NEG'
+    neg_dir = output_dir + negative + '_PDL1'
+    negativeNaming = FunctionFileNaming(negative)
+    cropAllFilesInDirectory(root_path, negativeNaming, output_dir=neg_dir)
+
+
 
 
