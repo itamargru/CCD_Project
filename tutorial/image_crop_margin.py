@@ -25,7 +25,7 @@ def cropAllFilesInDirectory(input_dir, naming_func, output_dir = None):
     for root, dirs, files in os.walk(input_dir):
         for file_index, file in enumerate(files):
             extension = os.path.splitext(file)
-            if extension[1] == '.tif':
+            if extension[1] == '.tiff':
                 file_path = os.path.join(root, file)
                 im = Image.open(file_path)
                 cropped = cropImageWhite(im)
@@ -58,20 +58,20 @@ def extractPatchesOutOfImage(image):
     
 
 if __name__ == "__main__":
-    root_path = r'/home/itamarg/Downloads/CCD'
+    root_path = r'/home/itamarg/Pictures/patches - tumor'
     output_dir = r'/home/itamarg/Pictures/PDL1_Cropped'
 
-    root_path_pos = os.path.join(root_path, r'PDL1 Positive')
-    positive = 'POS'
-    pos_dir = os.path.join(output_dir,positive + '_PDL1')
+    #root_path_pos = os.path.join(root_path, r'PDL1 Positive')
+    positive = 'PDL1'
+    pos_dir = os.path.join(output_dir,positive + '_ALL')
     positive_naming = FunctionFileNaming(positive)
-    cropAllFilesInDirectory(root_path_pos, positive_naming, output_dir=pos_dir)
+    cropAllFilesInDirectory(root_path, positive_naming, output_dir=pos_dir)
 
-    root_path_neg = os.path.join(root_path, r'PDL1 Negative')
-    negative = 'NEG'
-    neg_dir = os.path.join(output_dir, negative + '_PDL1')
-    negativ_naming = FunctionFileNaming(negative)
-    cropAllFilesInDirectory(root_path_neg, negativ_naming, output_dir=neg_dir)
+    # root_path_neg = os.path.join(root_path, r'PDL1 Negative')
+    # negative = 'NEG'
+    # neg_dir = os.path.join(output_dir, negative + '_PDL1')
+    # negativ_naming = FunctionFileNaming(negative)
+    # cropAllFilesInDirectory(root_path_neg, negativ_naming, output_dir=neg_dir)
 
 
 
