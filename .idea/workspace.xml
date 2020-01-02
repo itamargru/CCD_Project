@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f3df83-5d24-4731-9854-bba2cb600a67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tutorial/utiles_image_manipulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonAPI/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/image_crop_margin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/image_crop_margin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.image_augmantation">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PythonAPI" />
+      <recent name="$PROJECT_DIR$/tutorial" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
     <configuration name="auto_crop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CCD" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tutorial (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CCD" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonAPI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial/tutorial.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonAPI/setup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CCD" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonAPI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonAPI/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.setup" />
         <item itemvalue="Python.image_augmantation" />
         <item itemvalue="Python.auto_crop" />
         <item itemvalue="Python.classify_image" />
-        <item itemvalue="Python.tutorial (1)" />
-        <item itemvalue="Python.tutorial" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577289109273</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed the crop white mergin script and took out &#10;unnecessary files">
+      <created>1577990512109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577990512109</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,7 +228,8 @@
     <MESSAGE value="created function to reorder positive and negative images&#10;after croping" />
     <MESSAGE value="updated name to match convention" />
     <MESSAGE value="added auto crop class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added auto crop class" />
+    <MESSAGE value="changed the crop white mergin script and took out &#10;unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the crop white mergin script and took out &#10;unnecessary files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="592" y="200" key="#Inspections" timestamp="1577276493243">
@@ -232,42 +244,46 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="437" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1577289757678" />
-    <state x="604" y="135" key="CommitChangelistDialog2" timestamp="1577299302708">
+    <state x="755" y="243" key="#xdebugger.evaluate" timestamp="1577995268153">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="604" y="135" key="CommitChangelistDialog2/65.24.1855.1056@65.24.1855.1056" timestamp="1577299302708" />
-    <state width="1832" height="268" key="GridCell.Tab.0.bottom" timestamp="1577990301824">
+    <state x="755" y="243" key="#xdebugger.evaluate/65.24.1855.1056@65.24.1855.1056" timestamp="1577995268153" />
+    <state x="604" y="135" key="CommitChangelistDialog2" timestamp="1577996154133">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="268" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1577990301824" />
-    <state width="1832" height="268" key="GridCell.Tab.0.center" timestamp="1577990301823">
+    <state x="604" y="135" key="CommitChangelistDialog2/65.24.1855.1056@65.24.1855.1056" timestamp="1577996154133" />
+    <state width="1832" height="415" key="GridCell.Tab.0.bottom" timestamp="1577996080076">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="268" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1577990301823" />
-    <state width="1832" height="268" key="GridCell.Tab.0.left" timestamp="1577990301823">
+    <state width="1832" height="415" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080076" />
+    <state width="1832" height="415" key="GridCell.Tab.0.center" timestamp="1577996080075">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="268" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1577990301823" />
-    <state width="1832" height="268" key="GridCell.Tab.0.right" timestamp="1577990301823">
+    <state width="1832" height="415" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080075" />
+    <state width="1832" height="415" key="GridCell.Tab.0.left" timestamp="1577996080075">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="268" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1577990301823" />
-    <state width="1832" height="415" key="GridCell.Tab.1.bottom" timestamp="1577990284338">
+    <state width="1832" height="415" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080075" />
+    <state width="1832" height="415" key="GridCell.Tab.0.right" timestamp="1577996080075">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="415" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1577990284338" />
-    <state width="1832" height="415" key="GridCell.Tab.1.center" timestamp="1577990284337">
+    <state width="1832" height="415" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080075" />
+    <state width="1832" height="415" key="GridCell.Tab.1.bottom" timestamp="1577996080077">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="415" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1577990284337" />
-    <state width="1832" height="415" key="GridCell.Tab.1.left" timestamp="1577990284337">
+    <state width="1832" height="415" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080077" />
+    <state width="1832" height="415" key="GridCell.Tab.1.center" timestamp="1577996080076">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="415" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1577990284337" />
-    <state width="1832" height="415" key="GridCell.Tab.1.right" timestamp="1577990284337">
+    <state width="1832" height="415" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080076" />
+    <state width="1832" height="415" key="GridCell.Tab.1.left" timestamp="1577996080076">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1832" height="415" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1577990284337" />
+    <state width="1832" height="415" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080076" />
+    <state width="1832" height="415" key="GridCell.Tab.1.right" timestamp="1577996080077">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1832" height="415" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1577996080077" />
     <state x="702" y="257" key="MultipleFileMergeDialog" timestamp="1576341547609">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -276,14 +292,14 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="486" y="188" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1577263575403" />
-    <state x="592" y="275" key="Vcs.Push.Dialog.v2" timestamp="1577289249116">
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2" timestamp="1577990513841">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="592" y="275" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1577289249116" />
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1577986631291">
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1577990513841" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1577996140396">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1577986631291" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1577996140396" />
     <state x="765" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576351580524">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -302,7 +318,19 @@
           <line>88</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonAPI/test.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
