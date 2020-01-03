@@ -1,5 +1,8 @@
 from PIL import Image
 import os
+import numpy as np
+from ..PythonAPI.pycocotools.coco import COCO
+
 
 def operate_function_on_files(func_to_operate, input_dir, is_file_to_operate):
     for root, dirs, files in os.walk(input_dir):
@@ -52,7 +55,7 @@ class FunctionFileNamingByDirectory:
             dir_arr.pop(len(dir_arr) - 1)
         if self.files_class is None:
             return dir_arr[-1]
-        return self.files_class + '_' +  dir_arr[-1]
+        return self.files_class + '_' + dir_arr[-1]
 
 
 class FunctionSaveImage:
@@ -73,3 +76,23 @@ class FunctionSaveImage:
         file_name = self.renaming_function(input_file_path)
         file_name = str(file_name) + self.extension
         image.save(os.path.join(self.output_dir, file_name))
+
+def create_masks(coco: COCO, imgIds, catIds) -> dict:
+    imgIds = imgIds if type(imgIds) == list else [imgIds]
+    catIds = catIds if type(catIds) == list else [catIds]
+
+    masks = {}
+    for imgId in imgIds:
+        mask = None
+        for catId in catIds:
+            anns = coco.loadAnns(coco.getAnnIds(imgIds=imgId, catIds=catId))
+            for index, ann in enumerate(anns):
+                if mask is None:
+                    # creates mask
+                    mask = catId * coco.annToMask(ann)
+                else:
+                    # only fill relevant indices and override previous ann
+                    indices = coco.annToMask(ann)
+                    mask[indices == 1] = catId
+        masks[imgId] = mask
+    return masks

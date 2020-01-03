@@ -1,5 +1,5 @@
 from PIL import Image, ImageChops
-import utiles_image_manipulation as utiles
+from . import utiles_data_manipulation as utiles
 import os
 import cv2
 
@@ -18,10 +18,10 @@ def cropImageWhite(im, path=None):
 if __name__ == "__main__":
 
     root_path = r'/home/itamarg/Pictures/BigPatches'
-    output_dir = r'/home/itamarg/Pictures/DataMaskRCNN'
+    output_dir = r'/home/itamarg/Pictures/ToShai'
 
     rename_file = utiles.FunctionFileNamingByDirectory("MOD")
-    save_image = utiles.FunctionSaveImage(output_dir, rename_file, ".png")
+    save_image = utiles.FunctionSaveImage(output_dir, rename_file, ".jpg")
     is_file_tiff = utiles.CheckFileExtention(".tif")
     functions_to_operate = [cropImageWhite, save_image]
     image_transform = utiles.TransformGivenImage(functions_to_operate)
