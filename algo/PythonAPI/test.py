@@ -21,20 +21,10 @@ img = coco.loadImgs(int(imgIds[0]))[0]
 img_path = r'/home/itamarg/Pictures/DataMaskRCNN/MOD_1M16_19.06.2019_12.02.59 - Annotation 3.png'
 
 I = io.imread(img_path)
-# plt.axis('off')
-# plt.imshow(I)
-# plt.show()
 
 plt.imshow(I)
 plt.axis('off')
 annIds = coco.getAnnIds(imgIds=img['id'], catIds=catIds, iscrowd=None)
-
-# print('got ann ids')
-# anns = coco.loadAnns(annIds)
-# print('loaded anns')
-# coco.showAnns(anns)
-# print('anns show')
-# plt.show()
 
 catIds = coco.getCatIds(catNms=['pos', 'neg'])
 annIds = coco.getAnnIds(imgIds=img['id'], catIds=catIds, iscrowd=None)

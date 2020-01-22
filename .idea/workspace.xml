@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76f3df83-5d24-4731-9854-bba2cb600a67" name="Default Changelist" comment="added synthetic_data.py">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocoDemo.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocoEvalDemo.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/_mask.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/_mask.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/coco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/cocoeval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/pycocotools/mask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/PythonAPI/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algo/algoutiles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorial/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="76f3df83-5d24-4731-9854-bba2cb600a67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/algo/MaskRCNN_/mrcnn_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonAPI/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/PythonAPI/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/image_crop_margin.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/algoutiles/image_crop_margin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/utiles_image_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/algoutiles/utiles_data_manipulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo/PythonAPI/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/PythonAPI/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo/algoutiles/image_crop_margin.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/algoutiles/image_crop_margin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo/algoutiles/synthetic_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/algoutiles/synthetic_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo/algoutiles/utiles_data_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/algoutiles/utiles_data_manipulation.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +38,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -64,19 +48,7 @@
       <recent name="$PROJECT_DIR$/tutorial" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.sinthetic_data">
+  <component name="RunManager" selected="Python.synthetic_data">
     <configuration name="image_augmantation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CCD" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,7 +61,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algo/algoutiles/image_crop_margin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -111,7 +82,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonAPI/setup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -121,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sinthetic_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="synthetic_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CCD" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,8 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\shai.n\PycharmProjects\CCD_Project\algo\algoutiles\synthetic_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algo/algoutiles/synthetic_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +124,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algo/PythonAPI/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -177,7 +145,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonAPI/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -189,13 +156,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sinthetic_data" />
+        <item itemvalue="Python.synthetic_data" />
+        <item itemvalue="Python.image_augmantation" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.image_augmantation" />
         <item itemvalue="Python.setup" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -207,7 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573661233712</updated>
-      <workItem from="1579699968968" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="added function to crop the image from a white background">
       <created>1576063101269</created>
@@ -258,22 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1577996190830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test can read AVI tools exported COCO format and display it">
+      <created>1578060849157</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578060849157</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added function to crop the image from a white background" />
@@ -283,8 +254,8 @@
     <MESSAGE value="added auto crop class" />
     <MESSAGE value="changed the crop white mergin script and took out &#10;unnecessary files" />
     <MESSAGE value="updated test" />
-    <MESSAGE value="added synthetic_data.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added synthetic_data.py" />
+    <MESSAGE value="test can read AVI tools exported COCO format and display it" />
+    <option name="LAST_COMMIT_MESSAGE" value="test can read AVI tools exported COCO format and display it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="592" y="200" key="#Inspections" timestamp="1577276493243">
@@ -303,62 +274,70 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="755" y="243" key="#xdebugger.evaluate/65.24.1855.1056@65.24.1855.1056" timestamp="1577995268153" />
-    <state x="604" y="135" key="CommitChangelistDialog2" timestamp="1577996190668">
+    <state x="599" y="135" key="CommitChangelistDialog2" timestamp="1578060849018">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="604" y="135" key="CommitChangelistDialog2/65.24.1855.1056@65.24.1855.1056" timestamp="1577996190668" />
-    <state width="1855" height="231" key="GridCell.Tab.0.bottom" timestamp="1578059818341">
+    <state x="599" y="135" key="CommitChangelistDialog2/65.24.1855.1056@65.24.1855.1056" timestamp="1578060849018" />
+    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1579709610433">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="231" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1578059818341" />
-    <state width="1855" height="231" key="GridCell.Tab.0.center" timestamp="1578059818340">
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1579709610433" />
+    <state width="1832" height="427" key="GridCell.Tab.0.bottom" timestamp="1579715449678">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="231" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1578059818340" />
-    <state width="1855" height="231" key="GridCell.Tab.0.left" timestamp="1578059818340">
+    <state width="1832" height="427" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449678" />
+    <state width="1832" height="427" key="GridCell.Tab.0.center" timestamp="1579715449678">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="231" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1578059818340" />
-    <state width="1855" height="231" key="GridCell.Tab.0.right" timestamp="1578059818340">
+    <state width="1832" height="427" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449678" />
+    <state width="1832" height="427" key="GridCell.Tab.0.left" timestamp="1579715449677">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="231" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1578059818340" />
-    <state width="1855" height="438" key="GridCell.Tab.1.bottom" timestamp="1578059303431">
+    <state width="1832" height="427" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449677" />
+    <state width="1832" height="427" key="GridCell.Tab.0.right" timestamp="1579715449678">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="438" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1578059303431" />
-    <state width="1855" height="438" key="GridCell.Tab.1.center" timestamp="1578059303431">
+    <state width="1832" height="427" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449678" />
+    <state width="1832" height="427" key="GridCell.Tab.1.bottom" timestamp="1579715449679">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="438" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1578059303431" />
-    <state width="1855" height="438" key="GridCell.Tab.1.left" timestamp="1578059303431">
+    <state width="1832" height="427" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449679" />
+    <state width="1832" height="427" key="GridCell.Tab.1.center" timestamp="1579715449679">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="438" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1578059303431" />
-    <state width="1855" height="438" key="GridCell.Tab.1.right" timestamp="1578059303431">
+    <state width="1832" height="427" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449679" />
+    <state width="1832" height="427" key="GridCell.Tab.1.left" timestamp="1579715449679">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1855" height="438" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1578059303431" />
-    <state x="702" y="257" key="MultipleFileMergeDialog" timestamp="1576341547609">
+    <state width="1832" height="427" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449679" />
+    <state width="1832" height="427" key="GridCell.Tab.1.right" timestamp="1579715449679">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="702" y="257" key="MultipleFileMergeDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1576341547609" />
+    <state width="1832" height="427" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1579715449679" />
+    <state x="117" y="105" width="1638" height="872" key="MergeDialog" timestamp="1579701320163">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="117" y="105" width="1638" height="872" key="MergeDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579701320163" />
+    <state x="702" y="257" key="MultipleFileMergeDialog" timestamp="1579701320174">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="702" y="257" key="MultipleFileMergeDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579701320174" />
     <state x="486" y="188" key="SettingsEditor" timestamp="1577263575403">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="486" y="188" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1577263575403" />
-    <state x="592" y="275" key="Vcs.Push.Dialog.v2" timestamp="1577996192530">
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2" timestamp="1578060850699">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="592" y="275" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1577996192530" />
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1578039240438">
+    <state x="592" y="275" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1578060850699" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1579719548664">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1578039240438" />
-    <state x="765" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576351580524">
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1579719548664" />
+    <state x="765" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579701248351">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="765" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1855.1056@65.24.1855.1056" timestamp="1576351580524" />
+    <state x="765" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1855.1056@65.24.1855.1056" timestamp="1579701248351" />
     <state x="580" y="560" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578048521229">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -367,6 +346,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="429" y="264" width="1194" height="741" key="dock-window-1/65.24.1855.1056@65.24.1855.1056" timestamp="1578037311086" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1579679593765">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1579679593765" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,9 +375,9 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algo/PythonAPI/test.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/algo/algoutiles/utiles_data_manipulation.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -405,8 +388,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CCD_Project$sinthetic_data.coverage" NAME="sinthetic_data Coverage Results" MODIFIED="1579700834724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algo/algoutiles" />
   </component>
 </project>

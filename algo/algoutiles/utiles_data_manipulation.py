@@ -58,6 +58,12 @@ class FunctionFileNamingByDirectory:
         return self.files_class + '_' + dir_arr[-1]
 
 
+def default_namimg(input_file_path: str) -> str:
+    _, file_name = os.path.split(input_file_path)
+    file_name, _ = os.path.splitext(file_name)
+    return file_name
+
+
 class FunctionSaveImage:
     extension = ""
     output_dir = ""
@@ -66,17 +72,18 @@ class FunctionSaveImage:
     def __init__(self, output_dir, renaming_function=None, image_extension="png"):
         self.extension = image_extension
         self.output_dir = output_dir
-        self.renaming_function = renaming_function
+        self.renaming_function = renaming_function if renaming_function is not None else default_namimg
 
     def __call__(self, image, input_file_path):
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
-        _, file_name = os.path.split(input_file_path)
-        file_name, _ = os.path.splitext(file_name)
+
         file_name = self.renaming_function(input_file_path)
         file_name = str(file_name) + self.extension
         image.save(os.path.join(self.output_dir, file_name))
 
+
+# TODO: convert each ann to different instance except for the fourth ann which is BG
 def create_masks(coco: COCO, imgIds, catIds) -> dict:
     imgIds = imgIds if type(imgIds) == list else [imgIds]
     catIds = catIds if type(catIds) == list else [catIds]
